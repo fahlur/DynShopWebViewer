@@ -1,0 +1,224 @@
+/*
+    David, Dynamic Shop: Web Viewer
+    Copyright (C) 2014  Xevo Trends
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+body {
+    background: url('./img/space_background.jpg') repeat-x fixed center top #0B121A;
+    color: #666;
+    font-family: arial, sans-serif;
+}
+
+.logo {
+    margin: 0 auto;
+    width: 850px;
+    padding: 8px;
+    box-shadow: 0.2em 0.3em 0.1em rgba(0,0,0,0.30);
+    background: rgb(42,45,45);
+ /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(42,45,45,0.5) 0%, rgba(14,15,15,0.5) 50%, rgba(10,14,10,0.5) 51%, rgba(10,8,9,0.5) 100%);
+ /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(42,45,45,0.5)), color-stop(50%,rgba(14,15,15,0.5)), color-stop(51%,rgba(10,14,10,0.5)), color-stop(100%,rgba(10,8,9,0.5)));
+ /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(42,45,45,0.5) 0%,rgba(14,15,15,0.5) 50%,rgba(10,14,10,0.5) 51%,rgba(10,8,9,0.5) 100%);
+ /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(42,45,45,0.5) 0%,rgba(14,15,15,0.5) 50%,rgba(10,14,10,0.5) 51%,rgba(10,8,9,0.5) 100%);
+ /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(42,45,45,0.5) 0%,rgba(14,15,15,0.5) 50%,rgba(10,14,10,0.5) 51%,rgba(10,8,9,0.5) 100%);
+ /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(42,45,45,0.5) 0%,rgba(14,15,15,0.5) 50%,rgba(10,14,10,0.5) 51%,rgba(10,8,9,0.5) 100%);
+ /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a2d2d', endColorstr='#0a0809',GradientType=0 );
+ /* IE6-9 */;
+}
+
+.listType {
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0.1em 0.2em 0.1em rgba(0,0,0,0.80);
+    opacity: 0.6;
+    margin: 0;
+    padding: 4px;
+    margin-right: -6px;
+    margin-bottom: -8px;
+    filter: alpha(opacity=60);
+ /* For IE8 and earlier */;
+}
+
+.listType:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+ /* For IE8 and earlier */
+    cursor: pointer;
+    cursor: hand;
+}
+
+.form {
+    text-align: right;
+    margin-right: 28px;
+    padding-top: 8px;
+}
+
+input {
+    box-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,0.30);
+    background-color: rgba(255,255,255,0.2);
+    border: none;
+    height: 40px;
+}
+
+input.searchBox {
+    width: 300px;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: left;
+    vertical-align: middle;
+    margin-top: -5px;
+    padding-left: 8px;
+    box-shadow: 0.2em 0.3em 0.1em rgba(0,0,0,0.30);
+    background: rgb(42,45,45);
+ /* Old browsers */;
+}
+
+input.searchBtn {
+    color: #00BFFF;
+    font-weight: bold;
+    border: 2px solid rgba(51,102,153,0);
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+input.searchBtn:hover {
+    cursor: pointer;
+    cursor: hand;
+    border: 2px solid rgba(51,102,153,1);
+}
+
+td.items {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    border-bottom: 1px dashed #333;
+}
+
+.ItemsListForm tr:hover {
+    background-color: #0A2229;
+    cursor: crosshair;
+    cursor: crosshair;
+}
+
+.content {
+    box-shadow: 0.2em 0.3em 0.1em rgba(0,0,0,0.30);
+    width: 850px;
+    border: 2px solid rgba(25,25,25,0.5);
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+    padding: 8px;
+    padding-top: 12px;
+}
+
+hr {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+
+.copyright {
+    font-family: serif;
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+    margin: 25px;
+    text-shadow: 1px 1px #000;
+}
+
+.item {
+    width: 155px;
+    float: left;
+    margin: 4px;
+    border: 2px solid #333;
+    text-shadow: 1px 1px #333;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    filter: grayscale(62%);
+    -webkit-filter: grayscale(62%);
+    -moz-filter: grayscale(62%);
+    filter: grayscale(62%);
+}
+
+.item:hover {
+    border: 2px solid  #25936e;
+    -webkit-box-shadow: 0.1em 0.2em 0.1em rgba(0,0,0,0.90);
+    -moz-box-shadow: 0.1em 0.2em 0.1em rgba(0,0,0,0.90);
+    box-shadow: 0.1em 0.2em 0.1em rgba(0,0,0,0.90);
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.itemcontent {
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #424242;
+    color: #fff;
+    font-family: 'Helvetica Neue',sans-serif;
+    font-size: 12px;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    line-height: 30px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border: 0;
+    text-shadow: #000000 0 -1px 0;
+    width: 120px;
+    height: 32px;
+    margin-left: 4px;
+    box-shadow: 0.2em 0.3em 0.1em rgba(0,0,0,0.30);
+    background: rgb(42,45,45);
+ /* Old browsers */;
+}
+
+.button:hover {
+    background-color: #6E6E6E;
+}
+
+.button2 {
+    text-decoration: none;
+    background-color: #0B3861;
+    color: #fff;
+    font-family: 'Helvetica Neue',sans-serif;
+    font-size: 12px;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    line-height: 30px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border: 0;
+    text-shadow: #000000 0 -1px 0;
+    width: 120px;
+    height: 32px;
+    margin-left: 4px;
+} 
